@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Voyage';
+    src: url('../font/Voyage-Regular.ttf');
+}
+
+body {
+    font-size: 16px;
+    font-family: "Voyage";
+    color: #fff;
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+    text-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    background-color: #171717;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 150px;
+    height: auto;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 736px) {
+    .logo {
+        width: 100px;
+    }
+}
+
+.main-window{
+    margin: auto 0;
+    height: 100vh;
+    width: 45%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.link-text{
+    font-family: "Voyage";
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 1.5em;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+    border-bottom: 2px solid #ccc;
+    transition: 1s ease;
+}
+
+@media (min-width: 961px){
+    body {
+        overflow: hidden;
+        background-image: url(../img/bg.jpg);
+        background-position: 100% 100%;
+        background-size: 50% auto;
+        background-repeat: no-repeat;
+    }
+}
+
+/*Loader*/
+#loader {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+  }
+  
+  #l-c {
+    color: #eaeaea;
+  }
+  
+  #counter {
+    font-family: "Voyage", sans-serif;
+    font-size: 100px;
+  }
+  

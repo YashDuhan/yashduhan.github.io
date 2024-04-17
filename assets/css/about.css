@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Voyage';
+    src: url('../font/Voyage-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Kobe';
+    src: url('../font/KobeWeb-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../font/Roboto-Light.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrap{
+    margin: 0 auto;
+    margin-top: 6rem;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 736px)
+{
+    .wrap {
+        padding: 1rem;
+        width: 100%;
+    }
+}
+
+body {
+    font-size: 16px;
+    font-family: "Kobe";
+    color: #fff;
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+    text-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    background-color: #171717;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 150px;
+    height: auto;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 736px) {
+    .logo {
+        width: 100px;
+    }
+}
+
+#title {
+    font-family: "Voyage"!important;
+    margin-top: 3rem;
+    font-size: 4rem;
+    line-height: 3rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#content {
+    margin: 2rem 0;
+    line-height: 2em;
+    letter-spacing: 2px;
+}
+
+.spacing {
+    height: 25px;
+  }
+
+.about-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: auto;
+}
+
+@media (max-width: 768px)
+{
+    .about-box {
+        flex-direction: row;
+        max-width: 100%;
+    }
+}
+
+
+.about-box img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px)
+{
+    .about-box img {
+        margin-right: 10px!important;
+    }  
+}
+
+.side-div{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1em;
+    font-size: 12px;
+    margin: 0 !important;
+}
+
+.about-box h3{
+    opacity: .6;
+    margin: 0 !important;
+    font-size: 16px;
+}
+
+.side-div ul{
+    padding-left: 2rem;
+    margin: 0 !important;
+}
+
+.side-div li{
+    line-height: 2;
+    padding-left: .4rem;
+    font-size: 14px;
+    opacity: .8;
+    font-family: "Roboto-Light"!important;
+}
+
+li a {
+    opacity: .9;
+}
+
+a {
+    color: #ccc;
+    text-decoration: none;
+    border-bottom: 2px solid #ccc;
+    transition: .5s ease;
+}
+
+#content p {
+    margin-bottom: 0.05em!important;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    opacity: .8;
+}
+
+p {
+    display: inline;
+    opacity: .8;
+    font-family: "Roboto-Light"!important;
+}
+
+hr {
+    margin: 1rem 0;
+    background-color: transparent;
+    width: 50%;
+    border-style: solid;
+    border-width: 1px;
+    opacity: .3;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.footer p{
+    margin: 0!important;
+}
+
+.end-quote{
+    font-family:"Kobe";
+    font-size: 1.2em;
+}
+
+.normal-end-quote{
+    font-size: 1.2em;
+}
+
+
+/*Loader*/
+#loader {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+  }
+  
+  #l-c {
+    color: #eaeaea;
+  }
+  
+  #counter {
+    font-family: "Voyage", sans-serif;
+    font-size: 100px;
+  }
+  
